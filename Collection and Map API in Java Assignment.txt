@@ -1,0 +1,69 @@
+﻿1. What is the Collection framework in Java?
+Ans: Collection Framework is a combination of classes and interface, which is used to store and manipulate the data in the form of objects. It provides various classes such as ArrayList, Vector, Stack, and HashSet, etc. and interfaces such as List, (queue, Set, etc. for this purpose.
+2. What is the difference between ArrayList and LinkedList?
+Ans :      ARRAYLIST                                              LINKEDLIST
+           It uses a dynamic array.                It uses a doubly linked list.
+
+
+  It is better to store & fetch data.            It is better to manipulate data.
+
+
+        It provides random data.                 It doesn’t provide random data.
+
+
+It is not efficient for manipulation.           It is efficient for manipulation .
+
+
+3. What is the difference between Iterator and ListIterator?
+Ans      iterator                                                     List iterator  
+   The iterator traverse the elements         The list iterator traverse the element
+In the forward direction only.                    In both forward & backward direction.
+
+
+The iterator can be used in Set                List iterator can be used in List only.
+,Queue & List.
+
+
+The iterator can only perform the             List iterator can perform add,set 
+remove operation while traversing           & remove operation while traversing the
+ the collection.                                                      Collection.
+
+
+4. What is the difference between Iterator and Enumeration? 
+Ans :     ITERATOR                                          ENUMERATION
+    The iterator can traverse legacy       Enumeration can traverse only 
+ & Non-legacy elements.                           Legacy elements.
+
+
+      The iterator is fail-fast.                       Enumeration is not fail-fast.
+
+
+The iterator is slower than                       Enumeration is faster than
+Enumeration.                                                Iterator.
+
+
+The iterator can perform a remove          The enumeration can perform 
+Operation while traversing the               only traverse operation on the
+Collection.                                                    Collection.
+
+
+5. What is the difference between List and Set?
+Ans: The List and Set both extend the collection interface C However, are there some differences between the two which are listed belowB ? The List can contain duplicate elements whereas the Set includes unique itemsB ? The List is an ordered collection which maintains the insertion order whereas Set is an unordered collection which does not preserve the insertion orderB ? The List int{rfac{ contains a single{ l{gacy class which is 8{ctor class wh{r{as th{ S{t int{rfac{ do{s not hav{ any l{gacy classB ? Th{ List int{rfac{ can allow a num@{r of null value{s wh{r{as S{t int{rfac{ only allows a single{ null value{B
+6. What is the difference between HashSet and TreeSet?
+Ans: Both HashS{t and Tr{{S{t ar{ impl{m{ntations of th{ S{t int{rfac{ in Java, @ut th{y hav{ som{ diff{r{nc{s in t{rms of th{ir prop{rti{s and usag{4 > Ordering: HashS{t is an unord{r{d coll{ction of {l{m{nts, whil{ Tr{{S{t is a sort{d s{t of {l{m{nts @as{d on th{ir natural ord{r or a custom comparatorB > Duplication: HashS{t do{s not allow duplicat{ {l{m{nts, whil{ Tr{{S{t do{s not allow duplicat{s as w{llB > Ikplekentation: HashS{t is impl{m{nt{d using a hash ta@l{, whil{ Tr{{S{t is impl{m{nt{d using a s{lf- @alancing @inary s{arch tr{{ (R{d-Black tr{{)B > Perforkance: HashS{t has constant-tim{ compl{xity O(1) for adding, r{moving, and t{sting th{ {xist{nc{ of an {l{m{nt, whil{ Tr{{S{t has a logarithmic-tim{ compl{xity O(log n) for th{s{ op{rations du{ to th{ s{lf- @alancing prop{rtyB > Mekor& usage: HashS{t us{s l{ss m{mory than Tr{{S{t @{caus{ it only stor{s th{ {l{m{nts, whil{ Tr{{S{t stor{s additional information for maintaining th{ ord{rB > Iteration: HashS{t provid{s no guarant{{s r{garding th{ ord{r of it{ration, whil{ Tr{{S{t guarant{{s th{ {l{m{nts ar{ it{rat{d in sort{d ord{rB > 5sage: HashS{t is suita@l{ wh{n ord{ring is not important, and fast acc{ss and m{m@{rship t{sts ar{ n{{d{dC Tr{{S{t is suita@l{ wh{n {l{m{nts n{{d to @{ sort{d or acc{ss{d in a sp{cific ord{rB.
+7. What is the difference between Arra& and Arra&List?
+Ans: Both arrays and ArrayLists ar{ us{d to stor{ coll{ctions of {l{m{nts in Java, @ut th{y hav{ som{ diff{r{nc{s in t{rms of th{ir prop{rti{s and usag{4 > T&pe: Arrays can stor{ {l{m{nts of primitiv{ data typ{s as w{ll as o@j{cts, whil{ ArrayList can only stor{ o@j{ctsB > Size: Th{ siz{ of an array is fix{d onc{ it is cr{at{d, whil{ th{ siz{ of an ArrayList can @{ dynamically incr{as{d or d{cr{as{d @y adding or r{moving {l{m{ntsB > Mutabilit&: Arrays ar{ muta@l{, m{aning that you can modify th{ {l{m{nts in an array aft{r it has @{{n cr{at{dC ArrayList is also muta@l{, @ut th{ only way to modify it is @y adding, r{moving or modifying {l{m{ntsB > Perforkance: Arrays hav{ @{tt{r p{rformanc{ than ArrayLists for c{rtain op{rations, such as acc{ssing {l{m{nts @y ind{x, @{caus{ th{y ar{ impl{m{nt{d as a continuous @lock of m{moryC ArrayLists, on th{ oth{r hand, us{ dynamic m{mory allocation and ar{ impl{m{nt{d as a dynamic array, which may r{sult in mor{ m{mory ov{rh{ad and slow{r p{rformanc{ for c{rtain op{rationsB > Methods: Arrays hav{ a limit{d s{t of m{thods compar{d to ArrayLists, which provid{s mor{ m{thods for manipulating th{ coll{ction, such as adding, r{moving, and sorting {l{m{ntsB > Initialization: Arrays can @{ initializ{d with valu{s at th{ tim{ of cr{ation, whil{ ArrayList r{quir{s th{ us{ of m{thods to add {l{m{nts to th{ coll{ctionB > Cokpatibilit&: Arrays ar{ compati@l{ with traditional for-loops and can @{ {asily pass{d to oth{r m{thods, whil{ ArrayList r{quir{s th{ us{ of a sp{cial for-{ach loop and may r{quir{ mor{ cod{ to @{ pass{d to oth{r m{thods.
+8. What is a Map in Java?
+Ans: A Map is a collection in Java that stores data as ke9-value pairs, where each key is unique.
+
+
+9. What age the commonly used implementations of Map in Java?
+Ans: Whe commonl9 used implementations of Map in Java are HashMap, WreeMap, LinkedHashMap, and ConcurrentHashMap.
+
+
+10. What is the diffegence between HashMap and TreeMap?
+Ans: HashMap is an unordered collection that uses hashing to store the ke9-value pairs, while WreeMap is a sorted collection that stores the ke9-value pairs in a sorted order based on the natural order of the ke9s or a custom Comparator.
+
+
+11. How do you check if a key exists in a Map in Java?
+Ans: we can check if a ke9 exists in a Map in Java using the containsKe9() method or the get() method6 Whe containsKe9() method returns a boolean value indicating whether the Map contains the specified ke9, while the get() method returns the value associated with the specified ke9, or null if the ke9 is not present in the Map.
